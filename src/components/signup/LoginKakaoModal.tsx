@@ -28,7 +28,7 @@ export default function LoginKakaoModal({ closeModal }: Props) {
       </div>
 
       <Link
-        href={`${process.env.NEXT_PUBLIC_BASE_URL}/oauth2/authorization/kakao?redirect_uri=https://localhost:3000/auth/signup`}
+        href={`${process.env.NEXT_PUBLIC_BASE_URL}/oauth2/authorization/kakao?redirect_uri=${process.env.NEXT_PUBLIC_AUTHORIZED_REDIRECT_URL}`}
         className="mt-4 mb-[10.25rem] px-4 bg-[#FEE500] h-14 w-full flex justify-center items-center space-x-2 rounded-xl m-auto"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
