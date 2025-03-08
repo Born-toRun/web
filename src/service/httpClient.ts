@@ -1,7 +1,7 @@
 import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
-import HttpError from './httpError';
-import { refreshToken } from './auth';
 import { deleteCookie, getCookie, setCookie } from 'cookies-next';
+import { refreshToken } from './auth';
+import HttpError from './httpError';
 
 export const ACCESS_TOKEN = 'access_token';
 
